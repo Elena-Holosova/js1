@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lesson1</title>
+</head>
+<body>
+
+<script>
+//Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+//Вивести кожну змінну за допомогою: console.log , alert, document.write
+let a = 'hello';
+console.log(a);
+alert(a);
+document.write(a);
+
+let b = 'owu';
+console.log(b);
+alert(b);
+document.write(b);
+
+let c = 'com';
+console.log(c);
+alert(c);
+document.write(c);
+
+let d = 'ua';
+console.log(d);
+alert(d);
+document.write(d);
+
+let e = 1;
+console.log(e);
+alert(e);
+document.write(e);
+
+let f = 10;
+console.log(f);
+alert(f);
+document.write(f);
+
+let g = -999;
+console.log(g);
+alert(g);
+document.write(g);
+
+let h = 123;
+console.log(h);
+alert(h);
+document.write(h);
+
+let i = 3.14;
+console.log(i);
+alert(i);
+document.write(i);
+
+let j = 2.7;
+console.log(j);
+alert(j);
+document.write(j);
+
+let k = 16;
+console.log(k);
+alert(k);
+document.write(k);
+
+let l = true;
+console.log(l);
+alert(l);
+document.write(l);
+
+let m = false;
+console.log(m);
+alert(m);
+document.write(m);
+
+// //Переприсвоїти кожній змінній з завдання значення на довільне.Вивести кожну змінну за допомогою: console.log , alert, document.write
+
+a='bye';
+console.log(a);
+alert(a);
+document.write(a);
+
+b='google';
+console.log(b);
+alert(b);
+document.write(b);
+
+c='search';
+console.log(c);
+alert(c);
+document.write(c);
+
+d='system';
+console.log(d);
+alert(d);
+document.write(d);
+
+e=12;
+console.log(e);
+alert(e);
+document.write(e);
+
+f=-3;
+console.log(f);
+alert(f);
+document.write(f);
+
+g=8500;
+console.log(g);
+alert(g);
+document.write(g);
+
+h=2.96;
+console.log(h);
+alert(h);
+document.write(h);
+
+i=-0.67;
+console.log(i);
+alert(i);
+document.write(i);
+
+j=0;
+console.log(j);
+alert(j);
+document.write(j);
+
+k=1;
+console.log(k);
+alert(k);
+document.write(k);
+
+l=false;
+console.log(l);
+alert(l);
+document.write(l);
+
+m=true;
+console.log(m);
+alert(m);
+document.write(m);
+
+// //Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+
+const firstName = 'Олена';
+const middleName ='Євгеніївна';
+const lastName = 'Голосова';
+
+const person = firstName+' '+ middleName+' '+ lastName;
+console.log(person);
+alert(person);
+document.write(person);
+
+//За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+
+let name = prompt('what is your name?');
+console.log(name);
+document.write(name + ' ');
+
+let lastName = prompt('what is your lastname?');
+console.log(lastName);
+document.write(lastName + ' ');
+
+let age = prompt('how old are you?');
+console.log(age);
+document.write(age + ' ');
+
+let answer = 'Welcome' + ' ' + name + ' ' + lastName + '. ' + 'You are' + ' ' + age + ' ' + 'years old';
+
+console.log(answer);
+document.write(answer);
+
+//- За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+let aa = 100;
+console.log(typeof aa);
+
+let bb = '100';
+console.log(typeof bb);
+
+let cc = true;
+console.log(typeof cc);
+
+//Визначити відповідний оператор в виразах що б вийшов відповідний результат. В однакових виразах не використовувати однакові оператори!!!
+
+console.log(5 < 6);
+console.log(5 === 6);
+console.log(5 > 6);
+console.log(5 >= 6);
+
+console.log(10 >= 10);
+console.log(10 === 10);
+
+console.log(10 !== 10);
+console.log(10 > 10);
+console.log(10 < 10);
+
+console.log(123 === '123');
+console.log(123 == '123');
+
+
+//Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+let str = "20";
+let abc = 5;
+document.write(str + abc + "<br/>");
+document.write(str - abc + "<br/>");
+document.write(str * "2" + "<br/>");
+document.write(str / 2 + "<br/>");
+
+//+ приводит все к строкам, остальные арифметические операторы к числам, потому в первом случае идет
+// сложение двух строк, а далее операции над числами.
+
+</script>
+
+
+
+
+
+</body>
+</html>
