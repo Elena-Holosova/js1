@@ -15,19 +15,19 @@
 
     let time = +prompt('Enter a number between 0 and  59');
 
-    if((time >= 0) && (time <= 15)){
+    if(time >= 0 && time <= 15){
 
         console.log('your number is in the 1st quarter');
     }
-    else if((time >= 16) && (time <=30)){
+    else if(time >= 16 && time <=30){
 
         console.log('your number is in the 2nd quarter');
     }
-    else if((time >= 31) && (time <=45)){
+    else if(time >= 31 && time <=45){
 
         console.log('your number is in the 3rd quarter');
     }
-    else if((time >= 46) && (time <=59)){
+    else if(time >= 46 && time <=59){
 
         console.log('your number is in the 4th quarter');
     }
@@ -41,15 +41,15 @@
     //
     let day = +prompt('enter the number between 1 and 31');
 
-    if((day >=1) && (day <= 10)){
+    if(day >=1 && day <= 10){
 
         console.log('you are in a 1st decade');
     }
-    else if((day >=11) && (day <= 20)){
+    else if(day >=11 && day <= 20){
 
         console.log('you are in a 2nd decade');
     }
-    else if((day >=21) && (day <= 31)){
+    else if(day >=21 && day <= 31){
 
         console.log('you are in a 3rd decade');
     }
@@ -61,7 +61,7 @@
     //Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
 
     let year = prompt('enter the year')
-    if((year%4===0)){
+    if(year%4===0){
         console.log('leap year');
     }
     else{
@@ -73,7 +73,7 @@
     //Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!
 
     let quest = prompt('what is the official name of JS?');
-    if((quest === 'ECMAScript') || (quest === 'ecmascript')){
+    if(quest === 'ECMAScript' || quest === 'ecmascript'){
         console.log('Correct!');
         alert('Correct!');
     }
@@ -119,7 +119,7 @@
     // Напишіть два варіанти скрипта - з коротким записом(тернаркою)
 
     let test = prompt('enter something or no');
-    if(test==true){
+    if(test===true){
         console.log('WRONG!');
     }
     else {
@@ -128,7 +128,7 @@
 
     // //ternarka
     let test2 = prompt('enter something or no');
-    (test2==true) ? console.log('WRONG!') : console.log('correct')
+    (test2===true) ? console.log('WRONG!') : console.log('correct')
 
 
     //- Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.

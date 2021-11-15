@@ -32,13 +32,13 @@
 
     let apartment = +prompt('your apartment');
 
-    if((apartment >= 1) && (apartment <= 20)){
+    if(apartment >= 1 && apartment <= 20){
         console.log('you live at the 1st block');
     }
-    else if((apartment >=21) && (apartment <=48)){
+    else if(apartment >=21 && apartment <=48){
         console.log('you live at the 2nd block');
     }
-    else if((apartment >=49) && (apartment <=90)){
+    else if(apartment >=49 && apartment <=90){
         console.log('you live at the 3rd block');
     }
 
@@ -62,20 +62,20 @@
 
     let x = true;
 
-    if(typeof(x) == "number"){
+    if(typeof x == "number"){
         console.log('1');
-        console.log(typeof(x));
+        console.log(typeof x);
     }
-    else if(typeof(x) == "string"){
+    else if(typeof x == "string"){
         console.log('2');
     }
-    else if(typeof(x) == "boolean"){
+    else if(typeof x == "boolean"){
         console.log('3');
-        console.log(typeof(x));
+        console.log(typeof x);
     }
-    else if(typeof(x) == "object"){
+    else if(typeof x == "object"){
         console.log('4');
-        console.log(typeof(x));
+        console.log(typeof x);
     }
     else{
         console.log('you are wrong');
@@ -90,7 +90,7 @@
 
     let temp = +prompt('temperature?');
 
-    if((temp >= 10) && (temp <=22)){
+    if(temp >= 10 && temp <=22){
         console.log('go to Okten school');
     }
     else{
@@ -98,7 +98,7 @@
     }
 
     let temp2 = +prompt('temperature?');
-    ((temp2 >= 10) && (temp2 <=22)) ? console.log('go to Okten school') : console.log('stay home! study online')
+    (temp2 >= 10 && temp2 <=22) ? console.log('go to Okten school') : console.log('stay home! study online')
 
 
     // - За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
