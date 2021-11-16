@@ -1,0 +1,22 @@
+.simp{
+    display: flex;
+}
+
+.simp_text{
+    width: 85%;
+}
+.simp2{
+    font-size: 18px;
+}
+.img_simp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-card img{
+    width: 180px;
+    height: 180px;
+}
+.list_top{
+    margin: 20px;
+}
