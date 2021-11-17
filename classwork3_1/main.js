@@ -32,7 +32,7 @@ let i=0;
 
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
 //  while(i <10){
-//     if(array[i] % 2 == 0){
+//     if(array[i] % 2 === 0){
 //         console.log(array[i]);
 //     }
 //     i++;
@@ -40,14 +40,14 @@ let i=0;
 
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 // for(i = 0; i <10; i++){
-//     if(array[i] % 2 == 0){
+//     if(array[i] % 2 === 0){
 //         console.log(array[i]);
 //     }
 // }
 
 // 7. замінити кожне число кратне 3 на слово "okten"
 // for(i =0; i <10; i++){
-//     if(array[i] % 3 == 0){
+//     if(array[i] % 3 === 0){
 //         array[i] = "okten";
 //     }
 //     document.write(`<div> ${array[i]} </div>`);
@@ -61,7 +61,7 @@ let i=0;
 
 //7 замінити кожне число кратне 3 на слово "okten"
 // for(i =9; i >= 0; i--){
-//     if(array[i] % 3 == 0){
+//     if(array[i] % 3 === 0){
 //         array[i] = "okten";
 //     }
 //     document.write(`<div> ${array[i]} </div>`);
@@ -69,7 +69,7 @@ let i=0;
 
 //6 числа тільки парні  значення
 // for(i = 9; i >= 0; i--){
-//     if(array[i] % 2 == 0){
+//     if(array[i] % 2 === 0){
 //         console.log(array[i]);
 //     }
 // }
@@ -77,7 +77,7 @@ let i=0;
 //5 числа тільки парні  значення
 // let p = 9;
 //  while(p<=9){
-//     if(array[p] % 2 == 0){
+//     if(array[p] % 2 === 0){
 //         console.log(array[p]);
 //     }
 //     p--;
