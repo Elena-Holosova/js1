@@ -129,7 +129,7 @@ function minMax(inp) {
     console.log(max);
     return min;
 };
-
+minMax
 console.log(minMax(2,3,5,6,7,8,22));
 
 // - створити функцію яка заповнює масив рандомними числами
