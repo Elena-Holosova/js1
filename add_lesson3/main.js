@@ -107,29 +107,37 @@ let citiesWithId = [
     {user_id: 4, country: 'USA', city: 'Miami'}
 ];
 
-for(i=0; i<usersWithId.length; i++){
-var count = citiesWithId.filter(function (countr){
-    return countr.user_id === usersWithId[i]["id"];
-}).map(function (countr){
-    return countr.country;
-});
+// for(i=0; i<usersWithId.length; i++){
+// var count = citiesWithId.filter(function (countr){
+//     return countr.user_id === usersWithId[i]["id"];
+// }).map(function (countr){
+//     return countr.country;
+// });
+//
+// usersWithId[i].country = count;
+// }
+//
+// for(j=0; j<usersWithId.length; j++){
+//     var count2 = citiesWithId.filter(function (countr2){
+//         return countr2.user_id === usersWithId[j]["id"];
+//     }).map(function (countr2){
+//         return countr2.city;
+//     });
+//
+//     usersWithId[j].city = count2;
+//     console.log(usersWithId[j]);
+// }
 
-usersWithId[i].country = count;
+let newArr =[];
+for(let i =0; i<usersWithId.length; i++){
+    for(let j=0; j<citiesWithId.length; j++){
+        if(usersWithId[i].id===citiesWithId[j].user_id){
+            usersWithId[i].address=citiesWithId[j];
+        }
+    }
 }
-
-for(j=0; j<usersWithId.length; j++){
-    var count2 = citiesWithId.filter(function (countr2){
-        return countr2.user_id === usersWithId[j]["id"];
-    }).map(function (countr2){
-        return countr2.city;
-    });
-
-    usersWithId[j].city = count2;
-    console.log(usersWithId[j]);
-}
-
-
-
+newArr.push(usersWithId);
+console.log(newArr);
 
 
 
