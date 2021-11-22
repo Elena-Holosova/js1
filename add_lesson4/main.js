@@ -35,20 +35,20 @@ console.log(sumOrout(2));
 //     [2,3,4,5]
 // результат
 //     [3,5,7,9]
-let Arr1 = [1,2,3,4];
-let Arr2 = [2,3,4,5];
-let Arr3 =[];
+let arr1 = [1,2,3,4];
+let arr2 = [2,3,4,5];
+let arr3 =[];
 let sum =0;
-function sumArr(Arr1, Arr2){
-    for(let i=0, j=0; i<Arr1.length; i++, j++){
+function sumArr(arr1, arr2){
+    for(let i=0, j=0; i<arr1.length; i++, j++){
 
-            sum=Arr1[i]+Arr2[j];
-            Arr3.push(sum);
+            sum=arr1[i]+arr2[j];
+            arr3.push(sum);
 
     }
-    return Arr3;
+    return arr3;
 };
-console.log(sumArr(Arr1, Arr2));
+console.log(sumArr(arr1, arr2));
 
 //
 // - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
@@ -77,20 +77,20 @@ console.log(keyArr(array));
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
 
-let array2 = [
-    {name: 'Dima', age: 13},
-    {model: 'Camry'}
-];
-let elem2 = 0;
-let arra2=[]
-function valueArr(array2){
-    for(let i =0; i< array2.length; i++){
-        const k = Object.values(array2[i]);
-        for(let j =0; j<k.length; j++){
-            elem2 = k[j];
-            arra2.push(elem2);
-        }
-    }
-    return arra2;
-};
-console.log(valueArr(array2));
+// let array2 = [
+//     {name: 'Dima', age: 13},
+//     {model: 'Camry'}
+// ];
+// let elem2 = 0;
+// let arra2=[]
+// function valueArr(array2){
+//     for(let i =0; i< array2.length; i++){
+//         const k = Object.values(array2[i]);
+//         for(let j =0; j<k.length; j++){
+//             elem2 = k[j];
+//             arra2.push(elem2);
+//         }
+//     }
+//     return arra2;
+// };
+// console.log(valueArr(array2));
