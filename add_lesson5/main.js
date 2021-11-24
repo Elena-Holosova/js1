@@ -62,6 +62,21 @@ let arrMove =(...mas)=>{
     num = num.concat(zero);
     return num;
 };
-console.log(arrMove(0,1,2,3,4));
+console.log(arrMove(0,1,2,0,3,4, 9, 7, 0, 8));
 
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+let moveZero = (...array)=> {
+    let k = 0;
+    for (let i = 0; i < array.length; i++){
+        if(array[i] !== 0){
+            array[k++] = array[i];
+            console.log(k);
+        }
+    }
+    for (let i = k; i < array.length; i++){
+        array[i] = 0;
+    }
+    return array;
+};
 
+console.log(moveZero(0,1,3,0,6,0,5,0,0,8));
