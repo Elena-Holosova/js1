@@ -26,15 +26,17 @@ console.log(cutString('переохлаждение', 3));
 //
 
 let validat = (str) =>{
-    let count_at = 0;
-    let count_dot = 0;
-    let at = 0;
-    let dot =0;
-    let s1 = "";
-    let s2= "";
+    let count_at = 0; // counter for @
+    let count_dot = 0; // counter for dots
+    let at = 0;// index number for @
+    let dot =0;// index number for .
+    let s1 = ""; // string for symbols before @
+    let s2= ""; // string for symbols after @
 
-    let val =0;
-    let nval =0;
+    let val =0; // counter for valid check
+    let nval =0; // counter for invalid
+
+
     for(let i =0; i<str.length; i++){
         if(str[i] === '@'){
            count_at++;
@@ -86,15 +88,12 @@ let validat = (str) =>{
         nval++;
     }
 
-    if (nval===0){
+    if (nval===0){ //если счетчик невалидных условий все еще ноль
         console.log('EMAIL is VALID');
     }
     else{
         console.log('email is NOT VALID');
     }
-
-    console.log(val);
-    console.log(nval);
     };
 validat('someemail@gmail.com');
 validat('someeMAIL@gmail.com');
@@ -187,9 +186,22 @@ console.log(sortArr(coursesArray));
 // document.writeln(count(str, symb)) // 5
 
 let funCount = (str, stringsearch) =>{
-
-}
+    let temp =0;
+    for(let i =0; i<str.length; i++){
+        if(str[i]===stringsearch){
+            temp++;
+        }
+    }
+    return temp;
+};
+console.log(funCount('Астрономия это наука о небесных объектах', 'о'));
 //
 // - Напишіть функцію cutString(str, n), яка видаляє зайві слова з рядка str, залишивши у ній n слів.
 //     let str = "Сила тяжести приложена к центру масс тела";
 // document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
+
+let cutString2 = (str, n) =>{
+    return str.split(" ").splice(0, n).join(" ");
+};
+console.log(cutString2('If you are happy and you know it clap your hands', 4));
+
