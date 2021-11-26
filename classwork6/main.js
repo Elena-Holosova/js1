@@ -1,19 +1,18 @@
 
 // - Дано список імен.
-let n1 = 'Harry..Potter'
-let n2 = 'Ron---Whisley'
-let n3 = 'Hermione__Granger'
+let n1 = 'Harry..Potter';
+let n2 = 'Ron---Whisley';
+let n3 = 'Hermione__Granger';
 // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
 // let n1 = 'Harry Potter'
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
 let str = "";
-let s = "";
 let nameNew = (n) =>{
-
-    str = n.replace(/[^a-zA-Z ]/g, " ");
-    s=str.replace(/\s+/g, " ");
-    return s;
+    str = n.replace("..", " ")
+        .replace("---", " ")
+        .replace("__", " ");
+    return str;
 }
 console.log(nameNew(n1));
 console.log(nameNew(n2));
@@ -33,7 +32,7 @@ let arrRand = () => {
 };
 console.log(arrRand());
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
-console.log(arr.sort());
+console.log(arr.sort(function (a,b){return a-b}));
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
 //  та відфільтрувати  його за допомоги filter, залишивши тільки парні числа
@@ -45,6 +44,8 @@ console.log(result);
 
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) .
 // за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+let masTostr = (mas) => {return mas.map(value => value.toString())};
+console.log(masTostr(mas));
 
 
 // - створити функцію sortNums(direction), яка прймає масив чисел,
@@ -83,36 +84,16 @@ let coursesAndDurationArray = [
 ];
 
 // -- відсортувати його за спаданням за monthDuration
-
-console.log(coursesAndDurationArray.sort((a, b) => {
-    if (a.monthDuration < b.monthDuration)
-        return 1;
-    if (a.monthDuration > b.monthDuration)
-        return -1;
-    return 0;
-}));
+let ar = [];
+let sortMonth = (array)=>{
+    ar.push(coursesAndDurationArray.sort((a,b) => b.monthDuration - a.monthDuration));
+    return ar;
+};
+console.log(sortMonth(coursesAndDurationArray));
 
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
-//
-
-let funcFive = (coursesAndDurationArray) =>{
-for (let i =0; i<coursesAndDurationArray.length; i++){
-    if(coursesAndDurationArray[i].monthDuration <= 5){
-        coursesAndDurationArray.pop(coursesAndDurationArray[i]);
-    }
-}
-return coursesAndDurationArray;
-};
-console.log(funcFive(coursesAndDurationArray));
-
-// - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
-// document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
-
-let cutString = (string, n) =>{
-    let ans = [];
-    for(let i =0; i< string.length; i+=n){
-        ans.push(string.substr(i,n));
-    }
-    return ans;
-};
-console.log(cutString('переохлаждение', 3));
+// самостійно не додумалась, вчора на практиці розібралась вже((
+let fiveFilter = coursesAndDurationArray.filter((value) => {
+    return value.monthDuration > 5;
+});
+console.log(fiveFilter);

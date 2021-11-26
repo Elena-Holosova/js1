@@ -11,8 +11,8 @@ console.log(str3.length);
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 let str1new = str1.toUpperCase();
-let str2new = str2.toUpperCase()
-let str3new = str3.toUpperCase()
+let str2new = str2.toUpperCase();
+let str3new = str3.toUpperCase();
 console.log(str1new);
 console.log(str2new);
 console.log(str3new);
@@ -69,10 +69,10 @@ console.log(del_char(string, 5));
         for (i = 0; i < string3.length; i++) {
             if(string3[i].includes(" ")){
 
-                strNew+= "-"
+                strNew+= "-";
             }
             else{
-                strNew += string3[i].toUpperCase()
+                strNew += string3[i].toUpperCase();
             };
         }
         return strNew;
