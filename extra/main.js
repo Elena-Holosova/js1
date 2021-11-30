@@ -4,11 +4,11 @@
 // //     массивы ну и циклы
 
 function sum(number) {
-    if (number == 0) {
+    if (number === 0) {
         return 0;
     } else {
-        var last_num = number % 10;
-        var left_num = Math.floor(number / 10);
+        let last_num = number % 10;
+        let left_num = Math.trunc(number / 10);
         return last_num + sum(left_num);
     }
 };
