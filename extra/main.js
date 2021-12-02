@@ -13,8 +13,3 @@ function sum(number) {
     }
 };
 console.log(sum(1111));
-
-
-function newSum(num){
-
-}
