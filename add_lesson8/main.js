@@ -12,13 +12,14 @@ let allCl =[];
 //console.log(all);
 
 function rec(arr){
-        console.log(arr.classList);
-        for(let i =0; i<arr.length; i++){
-            if(arr[i].classList.length>0){
-                rec(arr[i]);
+        if(arr.children.length){
+        for(let i =0; i<arr.children.length; i++){
+            if(arr.children[i].className){
+                allCl.push(arr.children[i].className)
             }
-
+            rec(arr.children[i]);
         }
-
+        }
 };
-rec(all);
+rec(document.body);
+console.log(allCl);
