@@ -10,6 +10,33 @@ let cutString = (string, n) =>{
 };
 console.log(cutString('переохлаждение', 3));
 
+
+
+let scrollText = (str) =>{
+    let mas = [];
+    for(let i =0; i<str.length; i++){
+
+    }
+}
+// let cuString = (string) =>{
+//     let ans = [];
+//     if(string.length%2 === 0){
+//         for(let i =0; i< string.length; i+=2){
+//             ans.push(string.substr(i,2));
+//         }
+//         return ans;
+//     }
+//     else{
+//         for(let i =0; i< string.length; i+=2){
+//             ans.push(string.substr(i,2));
+//         }
+//         ans[ans.length-1]+='_';
+//         return ans;
+//     }
+//
+// };
+// console.log(cuString('переохлаждениеK'));
+
 // - Створити функцію-валідатор для адрес електронної пошти.
 // Перевірка повинна включати в себе :
 // данні до знака равлика(@), наявність равлика,
