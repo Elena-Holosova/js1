@@ -34,10 +34,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
             block.appendChild(info);
 
             info.onclick = function(){
-                let num = JSON.parse(localStorage.getItem('id')) || [];
+                let num = JSON.parse(localStorage.getItem('id'));
                 num = users[i].id;
                 localStorage.setItem('id', JSON.stringify(num));
             }
-
         }
     });

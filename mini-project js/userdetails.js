@@ -143,7 +143,7 @@ let info = JSON.parse(localStorage.getItem('id'));
                                         post.appendChild(link);
 
                                         link.onclick = function(){
-                                            let postInfo = JSON.parse(localStorage.getItem('postInfo')) || [];
+                                            let postInfo = JSON.parse(localStorage.getItem('postInfo'));
                                             postInfo = posts[j].id;
                                             localStorage.setItem('postInfo', JSON.stringify(postInfo));
                                         }
