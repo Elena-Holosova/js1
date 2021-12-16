@@ -13,6 +13,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         let wrap = document.createElement('div');
         wrap.classList.add('wrap');
         document.body.appendChild(wrap);
+
         for (let i =0; i<posts.length; i++){
             if(posts[i].id === postIn){
                 let postInfo_Block = document.createElement('div');
@@ -41,6 +42,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                         let commentBlock = document.createElement('div');
                         wrap.appendChild(commentBlock);
                         commentBlock.classList.add('commentBlock');
+
                         for(let j =0; j<comments.length;j++){
                             if(postIn ===comments[j].postId){
                                 let comment = document.createElement('div');
@@ -67,11 +69,6 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                                 comment.appendChild(bodyP);
 
 
-                                //postid
-                                //id
-                                //name
-                                //email
-                                //body
                             }
                         }
                     })

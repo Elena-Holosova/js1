@@ -12,6 +12,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         let wrap = document.createElement('div');
         wrap.classList.add('wrap');
         document.body.appendChild(wrap);
+
         for(let i =0; i<users.length; i++){
             let block = document.createElement('div');
             let id = document.createElement('div');
