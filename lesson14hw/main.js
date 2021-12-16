@@ -1,5 +1,5 @@
 
-
+//
 function wakeUp(alarmClock){
     return new Promise((resolve, reject) =>{
         setTimeout(()=>{
@@ -69,8 +69,13 @@ wakeUp(true)
     })
     .then(() =>{
         return sleep(true);
-    })
-    .then(() =>{
-        console.log('day is over!');
     });
 
+
+async function holiday(){
+    await wakeUp(true);
+    await breakfast(true);
+    await goWork(true);
+    await sleep(true);
+};
+holiday();
