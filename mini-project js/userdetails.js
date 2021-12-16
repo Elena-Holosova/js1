@@ -126,8 +126,7 @@ let info = JSON.parse(localStorage.getItem('id'));
                                         let post = document.createElement('div');
 
                                         let title = document.createElement('p');
-                                        let link = document.createElement('a');
-
+                                        let link = document.createElement('button');
 
 
                                         post.classList.add('post');
@@ -135,7 +134,8 @@ let info = JSON.parse(localStorage.getItem('id'));
 
                                         title.innerText = posts[j].title;
                                         link.innerText = 'Get more info about this post';
-                                        link.href = 'postdetails.html';
+
+
 
                                         postsblock.appendChild(post);
 
@@ -143,6 +143,7 @@ let info = JSON.parse(localStorage.getItem('id'));
                                         post.appendChild(link);
 
                                         link.onclick = function(){
+                                            document.location='postdetails.html';
                                             let postInfo = JSON.parse(localStorage.getItem('postInfo'));
                                             postInfo = posts[j].id;
                                             localStorage.setItem('postInfo', JSON.stringify(postInfo));
