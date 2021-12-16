@@ -72,10 +72,10 @@ wakeUp(true)
     });
 
 
-async function holiday(){
+async function schedule(){
     await wakeUp(true);
     await breakfast(true);
     await goWork(true);
     await sleep(true);
 };
-holiday();
+schedule();
